@@ -7,7 +7,7 @@ const { useEffect } = require('react');
 const { useDispatch } = require('react-redux');
 
 
-export const Phonebook = () => {
+const Phonebook = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getContactsData());
@@ -34,3 +34,6 @@ export const Phonebook = () => {
     </div>
   );
 };
+
+
+export default Phonebook

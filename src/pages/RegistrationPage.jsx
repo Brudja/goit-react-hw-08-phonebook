@@ -2,9 +2,11 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 import { registrUser } from 'redux/PhoneBookRedux/Registraishon/RegOperethion';
+import css from "./RegistrationPage.module.css"
 
 
-export function RegistrationUser() {
+
+function RegistrationUser() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -35,17 +37,17 @@ export function RegistrationUser() {
     }
   };
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        color: '#010101',
-        gap: 10,
-      }}
+    <div className={css.RegistrCount}
+      // style={{
+      //   display: 'flex',
+      //   flexDirection: 'column',
+      //   justifyContent: 'center',
+      //   alignItems: 'center',
+      //   color: '#010101',
+      //   gap: 10,
+      // }}
     >
-      <form onSubmit={handleFormSubmit}>
+      <form onSubmit={handleFormSubmit} className={css.formReg}>
         <label>
           name
           <input
@@ -93,3 +95,6 @@ export function RegistrationUser() {
     </div>
   );
 }
+
+
+export default RegistrationUser

@@ -1,4 +1,4 @@
-export function HomePage() {
+function HomePage() {
     return (
       <div
         style={{
@@ -10,3 +10,4 @@ export function HomePage() {
     );
   }
   
+  export default HomePage

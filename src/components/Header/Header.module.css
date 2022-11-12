@@ -1,16 +1,53 @@
+header {
+  padding-top: 10px;
+  height: 60px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 20px;
+  background-color: rgb(226, 221, 214);
+  margin-top: 0;
+
+}
+.navHeader{
+  display: flex;
+  align-items: center
+}
+
+.listHeader {
+ display: flex;
+  padding: 5px;
+  margin:0 auto;
+  list-style: none;
+  gap: 30px;
+  justify-content: center
+}
 .link {
-    color: rgb(114, 111, 111);
-  }
-  
-  .active {
-    color: rgb(126, 17, 199);
-  }
-  
-  .active,
-  .link {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.5;
-    text-decoration: none;
-  }
-  
+  color: rgb(38, 94, 197);
+  background-color: rgb(228, 224, 30);
+  border-radius: 12px;
+
+}
+
+.active {
+  color: rgb(228, 224, 30);
+  background-color: rgb(38, 94, 197);
+  border-radius: 12px;
+}
+
+.active,
+.link {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+
+.Home{
+  color:black;
+  background-color: red;
+  border-radius: 12px;
+  border: 2px solid green;
+  padding: 5px;
+  margin: 5px;
+}

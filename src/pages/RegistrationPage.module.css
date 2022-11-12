@@ -1,0 +1,27 @@
+
+.formReg{
+width: 200px;
+height: 350px;
+justify-content: space-evenly;
+align-items: center;
+}
+.RegistrCount{
+display: flex;
+justify-content: center;
+margin: 30px;
+}
+
+
+.LoginCount{
+    display: flex;
+justify-content: center;
+margin: 30px;
+}
+
+
+.FormLogin{
+    width: 200px;
+height: 350px;
+justify-content: space-evenly;
+align-items: center;
+}

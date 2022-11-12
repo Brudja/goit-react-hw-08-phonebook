@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { currentOperation, loginOperation, registrUser } from './RegOperethion';
+import { currentOperation, loginOperation, logoutOperation, registrUser } from './RegOperethion';
 
 const Status = {
     init: 'INIT',
@@ -52,6 +52,16 @@ const Status = {
         state.isLoggedIn = false;
         state.token = null;
       },
+      [logoutOperation.pending](state) {
+        state.status = Status.loading;
+      },
+      [logoutOperation.fulfilled]() {
+        return initialState;
+      },
+      [logoutOperation.rejected](state) {
+        state.status = Status.error;
+      },
+  
       [currentOperation.pending](state) {
         state.status = Status.loading;
       },
@@ -70,4 +80,4 @@ const Status = {
     },
   });
 
-  export default registrSlice
+  export default registrSlice.reducer;

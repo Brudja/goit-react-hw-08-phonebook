@@ -12,9 +12,9 @@ export const Header = () => {
 
   return (
     <header>
-      <nav>
-        <NavLink end to="/">Back home</NavLink>
-        <ul>
+      <nav className={css.navHeader}>
+        <NavLink end to="/" className={css.Home}>Back home</NavLink>
+        <ul className={css.listHeader}>
           {token ? (
             <>
               <li>

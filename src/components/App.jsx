@@ -6,9 +6,9 @@ import { lazy, Suspense } from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import { currentOperation } from 'redux/PhoneBookRedux/Registraishon/RegOperethion';
 import { PrivateRouts } from './PrivatRouts/PrivatRoutes';
-import { HomePage } from 'pages/HomePage';
 import PublicRouts from './PublickRoutes.jsx/PublickRoutes';
-import Layout from 'layout';
+import { Layout } from './Layout';
+import HomePage from 'pages/HomePage';
 
 
 const RegistrationUser = lazy(() => import('../pages/RegistrationPage'));

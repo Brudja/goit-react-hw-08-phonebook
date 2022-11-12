@@ -3,7 +3,7 @@ import React from 'react';
 export function Footer() {
   return (
     <footer>
-      <p>Final</p>
+      <p>Welcom to Herson phoonbook</p>
     </footer>
   );
 }

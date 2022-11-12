@@ -1,5 +1,44 @@
 @import-normalize; /* bring in normalize.css styles */
+form {
+  border: 1px solid rgb(10, 10, 10);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 250px;
+  background-color: white;
+  color: black;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+label {
+  font-size: 15px;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+button {
+  color: rgb(255, 0, 34);
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 
+  gap: 10px;
+}
+h2 {
+  font-size: 20px;
+}
+input {
+  align-items: center;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -13,22 +52,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-h1{
-  font-size: 50px
-}
-
-h2{
-  font-size: 30px;
-}
-
-form{
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(212, 212, 197);
+  color: white;
   text-align: center;
-  border: 3px solid gold;
-  padding: 15px;
 }
-
-label{
-  font-size: 15px;
-  padding: 5px;
+body {
+  background-color: rgba(219, 219, 235, 0.479);
 }

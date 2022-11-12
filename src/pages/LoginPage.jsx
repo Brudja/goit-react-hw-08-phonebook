@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { loginOperation } from 'redux/PhoneBookRedux/Registraishon/RegOperethion';
+import css from "./RegistrationPage.module.css"
 
 
-export function Login() {
+function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -21,16 +22,17 @@ export function Login() {
 
 return (
     <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        color: '#010101',
-        gap: 10,
-      }}
+    className={css.LoginCount}
+      // style={{
+      //   display: 'flex',
+      //   flexDirection: 'column',
+      //   justifyContent: 'center',
+      //   alignItems: 'center',
+      //   color: '#010101',
+      //   gap: 10,
+      // }}
     >
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className={css.FormLogin}>
         <label htmlFor="email">Email</label>
         <input onChange={handleChange} type="text" id="email" value={email} />
         <label htmlFor="password">Password</label>
@@ -46,3 +48,4 @@ return (
   );
 }
 
+export default Login
