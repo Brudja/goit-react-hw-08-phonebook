@@ -9,11 +9,11 @@ const Status = {
 
 const initialState = {
   items: [],
-  isLoading: false,
+  status: Status.init,
   error: null,
 };
 
-export const phonebookSlice = createSlice({
+const phonebookSlice = createSlice({
   name: 'phonebook',
   initialState,
 

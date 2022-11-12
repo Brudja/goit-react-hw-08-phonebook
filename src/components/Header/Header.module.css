@@ -1,0 +1,16 @@
+.link {
+    color: rgb(114, 111, 111);
+  }
+  
+  .active {
+    color: rgb(126, 17, 199);
+  }
+  
+  .active,
+  .link {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+  
